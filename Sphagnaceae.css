@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "myfont";
+    src: url("./Associated_files/Naturaliste.woff") format('woff');
+  }
+
+@font-face {
+    font-family: "myfont_2";
+    src: url("./Associated_files/BernhardModernStd-Roman.woff") format('woff');
+  }
+  *{
+    /* border: .5px solid red; */
+    margin: 0;
+    padding: 0;
+  }
+
+#header_left {
+    font-family: myfont;
+    color: black;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+#Header_image {
+    width: 100%;
+    margin-top: 78px;
+}
+
+img{
+    /* border: 2px solid green; */
+}
+
+a { color: #000; text-decoration: underline; transition: all 0.1s ease-in-out; }
+a:hover { text-decoration-color: transparent; }
+acronym { font-variant: small-caps; text-transform: lowercase; }
+aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2rem 0; }
+
+#header {
+    align-items: center;
+    background: var(--bg);
+    border-bottom: var(--border);
+    display: flex;
+    /*justify-content: space-between;*/
+    left: 0;
+    /* padding: 10px var(--padx); */
+    /* padding: 10px 3%; */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#header_left a { text-decoration: transparent; color: black;}
+
+#header_right a { color: #000000; display: inline-block; padding: 0.5em; text-decoration: transparent;}
+#header_right a:hover {color: #845446;}
+#header_right a:hover {text-decoration: underline;}
+#header_right li {
+    display: inline-block; 
+    margin: 0 70px;
+}
+
+#header_right #nav-toggle { display: none; font-size: 1.1rem; }
+#header_right ul {
+    list-style: none;
+    width: 100%;
+    margin-left: 0px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    /* font-weight: 900; */
+}
+
+#header_right {
+    /* border:2px solid blue; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* margin: 0 70px; */
+}
+#hamburger{
+    /* display: none; */
+}
+
+@media screen and (max-width: 700px) {
+    #header_right ul{
+        display: none;
+    }
+    #header_right{
+        position: relative;
+    }
+    #hamburger{
+        display: inline;
+        position: absolute;
+        right: 40px;
+    }
+}
+
+:root {
+    --padx: 3%;
+    --border: 1px solid rgba(0, 0, 0, 0.3);
+    --bg: #fff;
+}
+
+body {
+    background: var(--bg);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.0;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+   display: flex; 
+}
+
+#left_paragraph {
+    /* background-color: blueviolet; */
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 90px;
+    padding-top: 30px;
+    /* height: 400vh; */
+}
+
+#second_section {
+    display: flex;
+    align-items: flex-start;
+    /* background-color: red; */
+  }
+  
+  #second_section_image {
+    flex: 0 0 50%;
+    position: sticky;
+    top: 78px;
+    overflow: hidden;
+  }
+  
+  #second_section_image img {
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    margin: 0 auto 1em;
+    max-width: 1000px;
+    position: relative;
+  }
+  
+  #second_section_text {
+    flex: 0 0 50%;
+    /* padding: 20px; */
+    overflow-y: auto; /* Change to 'auto' for automatic scrollbar */
+    height: 100%; /* Set the height to occupy the full container */
+    margin-top: 10px;
+  }
+  
+  /* Adjust the styling of the text container to maintain proper scroll appearance */
+  .second_section_title {
+    font-family: myfont_2;
+    font-size: 40px;
+    letter-spacing: .3rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    position: relative;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    /* padding-left: 20px; */
+    /* margin-bottom: 20px;  */
+}
+  
+  .second_section_paragraph {
+    font-family: myfont_2;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    background-color: #fff;
+    z-index: 0;
+    /* padding-left: 20px; */
+    /* margin-bottom: 20px;  */
+  }
+  
+  /* Adjust the scrolling behavior of the text container */
+  #second_section_text::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  #second_section_text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  #second_section_text::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  #second_section_text::-webkit-scrollbar-thumb:hover {
+    background: #555;
+
+
+
+
+
